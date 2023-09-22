@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <style>
+        body {
+            background: #1d1e1d;
+
+        }
+
+        .top-div {
+            background-color: black;
+            height: 120px;
+        }
+
+        .logo {
+            height: 40px;
+            width: 140px;
+            padding-top: 2.5%;
+            padding-left: 2.5%;
+        }
+
+        .main-body {
+            margin-top: 30px;
+            margin: 30px 25% 0px;
+            /* top, right/left, bottom */
+            height: 100%;
+            padding-bottom: 20px;
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 5px;
+            text-align: center;
+        }
+
+        .continue-button {
+            width: 37%;
+            height: 48px;
+            border-radius: 30px;
+            background-color: transparent;
+            color: aliceblue;
+            border: solid gray;
+        }
+
+        .phone {
+            margin-bottom: 30px;
+        }
+
+        label {
+            margin-bottom: 0px;
+            text-align: left;
+        }
+
+        input {
+            margin-top: 0px;
+            height: 40px;
+            width: 35%;
+            border-radius: 3px;
+        }
+
+        .login {
+            margin-top: 50px;
+            background-color: #1fdf64;
+            font-weight: bold;
+        }
+
+        .forgot-pass {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        hr {
+            border-color: aliceblue;
+            border: none;
+            border-top: 1px solid rgb(41, 41, 41);
+            width: 75%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-div">
+            <img class="logo" src=".//Spotify_Logo_CMYK_White.png" alt="logo">
+        </div>
+
+        <div class="main-body">
+            <h1 class="login-text">Log in to Spotify</h1>
+
+            <button class="continue-button google">Continue with Google</button>
+
+            <button class="continue-button facebook">Continue with Facebook</button>
+            <button class="continue-button apple">Continue with Apple</button>
+            <button class="continue-button phone">Continue with Phone number</button>
+            <hr>
+
+
+            <label for="email">Email or username</label>
+            <input type="email" placeholder="Email or username">
+
+            <label for="email">Password</label>
+            <input type="email" placeholder="Email or username">
+
+            <button class="continue-button login">Log In</button>
+            <a class="forgot-pass" href="">Forgot your password?</a>
+            <hr>
+
+            <p>Don't have an account? <a href="">Sign up for Spotify</a></p>
+
+        </div>
+    </div>
+</body>
+
+</html>
